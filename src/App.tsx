@@ -1,14 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
+import waddle from './penguin.gif';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1 className="text-4xl">
-        Step app (web)
+        <img src={waddle} className="App-logo" alt="logo" />
+        <h1 className="text-4xl text-slate-800 font-bold mt-[-50px]">
+         get waddling.
         </h1>
       </header>
     </div>
