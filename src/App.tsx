@@ -12,8 +12,8 @@ function App() {
         </h1>
           <a
             className="text-2xl text-slate-800 font-bold"
-            href="https://joinwaddle.netlify.app/"
-          >hishis</a>
+            href="step.champ://?name=zaydadnan"
+          >Add friend here</a>
 
       </header>
     </div>
