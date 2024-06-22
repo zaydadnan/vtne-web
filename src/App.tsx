@@ -1,18 +1,19 @@
+import React from 'react';
 import waddle from './penguin.gif';
 import './App.css';
 
-
 function App() {
-  
-  const handleButtonClick = () => {
-    const url = 'step-champ://?name=zaydadnan';
-    window.location.href = url;
+  const handleRedirect = () => {
+    const appSchemeURL = "step-champ://";
+    // const fallbackURL = "https://your-fallback-url.com"; // Change this to your actual fallback URL or App Store link
 
-    setTimeout(() => {
-      window.location.href = 'https://yourdomain.com/fallback';  // Change this to your website's fallback URL
-    }, 1000);
+      window.location.pathname = appSchemeURL;
+
+      setTimeout(() => {
+        window.location.pathname = appSchemeURL;
+      }, 1000); // 1 second delay before redirecting to fallback URL
+    
   };
-
 
   return (
     <div className="App">
@@ -23,11 +24,10 @@ function App() {
         </h1>
         <button
           className="text-2xl text-slate-800 font-bold"
-          onClick={handleButtonClick}
+          onClick={handleRedirect}
         >
-          Add friend here
+          Add friend heres
         </button>
-
       </header>
     </div>
   );
