@@ -9,14 +9,23 @@
   <meta name="description" content="Web site created using create-react-app" />
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
   <script>
-    window.onload = function () {
-      const url = window.location.href.replace("https://joinwaddle.netlify.app", "step-champ://")
-      window.location = url;
-      setTimeout(function () {
-        window.location = "https://google.com";
-      }, 1000);
+    window.onload = function() {
+      // Function to check if UTM parameters exist in the URL
+      function hasUTMParameters() {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.has('name') && urlParams.has('id') && urlParams.has('function');
+      }
+  
+      if (hasUTMParameters()) {
+        console.log('UTM parameters exist');
+        const url = window.location.href.replace("https://joinwaddle.netlify.app", "https://google.com");
+        window.location = url;
+        setTimeout(function() {
+          window.location = "https://joinwaddle.netlify.app";
+        }, 1000);
+      }
     }
-  </script>
+    </script>
 
   <!--
       manifest.json provides metadata used when your web app is installed on a
