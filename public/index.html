@@ -20,6 +20,7 @@
         const urlParams = new URLSearchParams(window.location.search);
         const name = urlParams.get('name');
         const id = urlParams.get('id');
+        const func = urlParams.get('function');
         const url = `step-champ://?name=${encodeURIComponent(name)}&id=${encodeURIComponent(id)}&function=${encodeURIComponent(func)}`;
         window.location = url;
         setTimeout(function() {
