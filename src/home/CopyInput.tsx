@@ -23,7 +23,7 @@ const CopyInput: React.FC<CopyInputProps> = ({ name, userId }) => {
       <div className="flex items-center w-full rounded-lg border border-slate-300">
         <input
           type="search"
-          className="w-full px-4 py-1 text-gray-800 rounded-full focus:outline-none text-slate-500"
+          className="w-full px-4 py-1 rounded-full focus:outline-none text-slate-500 bg-white"
           placeholder="search"
           readOnly
           value={userId}
