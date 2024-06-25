@@ -24,7 +24,6 @@ const AddFriend: React.FC = () => {
       const appUrl = `step-champ://?name=${encodeURIComponent(name)}&id=${encodeURIComponent(id)}&function=addFriend`;
       window.location.href = appUrl;
     } catch (error) {
-      window.location.href = 'https://apps.apple.com/us/app/voidpet/id1668932264?itsct=apps_box_badge&itscg=30200';
       console.error('Error redirecting to app', error);
     }
   };
