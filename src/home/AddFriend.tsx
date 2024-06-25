@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const AddFriend: React.FC = () => {
   const [name, setName] = useState<string>('Your friend');
   const [id, setId] = useState<string>('default_id');
-  
+
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
     const nameParam = urlParams.get('name');
@@ -29,7 +29,7 @@ const AddFriend: React.FC = () => {
         <div>1. join the app</div>
         <div>2. select invite friend</div>
         <div>3. enter the user id above</div>
-        <div>4. start competing with {name.toLowerCase()}!</div>
+        <div>4. start competing with {name}!</div>
       </div>
     </div>
   );

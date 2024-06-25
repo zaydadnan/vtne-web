@@ -15,19 +15,24 @@
         const urlParams = new URLSearchParams(window.location.search);
         return urlParams.has('name') && urlParams.has('id') && urlParams.has('function');
       }
-  
+    
       if (hasUTMParameters()) {
         const urlParams = new URLSearchParams(window.location.search);
         const name = urlParams.get('name');
         const id = urlParams.get('id');
         const func = urlParams.get('function');
-        const url = `step-champ://?name=${encodeURIComponent(name)}&id=${encodeURIComponent(id)}&function=${encodeURIComponent(func)}`;
-        window.location = url;
+    
+        // Attempt to redirect to the app URI
+        const appUrl = `step-champ://?name=${encodeURIComponent(name)}&id=${encodeURIComponent(id)}&function=${encodeURIComponent(func)}`;
+        window.location = appUrl;
+    
+        // Set a timeout to redirect to the web URL as fallback after 2 seconds
         setTimeout(function() {
-          window.location = `https://joinwaddle.netlify.app/?name=${encodeURIComponent(name)}&id=${encodeURIComponent(id)}&webfunction=${encodeURIComponent(func)}`;
-        }, 1000);
+          const webUrl = `https://joinwaddle.netlify.app/?name=${encodeURIComponent(name)}&id=${encodeURIComponent(id)}&webfunction=${encodeURIComponent(func)}`;
+          window.location.replace(webUrl); // Use replace to prevent back button issues
+        }, 2000); // Adjust timeout as needed
       }
-    }
+    };    
     </script>
 
   <!--
