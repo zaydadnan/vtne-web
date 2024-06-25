@@ -40,7 +40,7 @@ const HomePage: React.FC = () => {
 
 function hasUTMParameters() {
     const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.has('name') && urlParams.has('id') && urlParams.has('webfunction');
+    return urlParams.has('name') && urlParams.has('id') && urlParams.has('function');
   }
   
 
