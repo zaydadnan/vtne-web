@@ -1,10 +1,23 @@
 import React from "react";
 import CopyInput from "./CopyInput";
+import { useEffect, useState } from "react";
 
 const AddFriend: React.FC = () => {
-  const urlParams = new URLSearchParams(window.location.href);
-  const name = urlParams.get('name') || 'Your friend';
-  const id = urlParams.get('id') || 'default_id';
+  const [name, setName] = useState<string>('Your friend');
+  const [id, setId] = useState<string>('default_id');
+  
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const nameParam = urlParams.get('name');
+    const idParam = urlParams.get('id');
+    if (nameParam) {
+      setName(nameParam);
+    }
+    if (idParam) {
+      setId(idParam);
+    }
+  }, []);
+
 
   return (
     <div className="bg-white flex flex-col justify-center max-w-xl">
