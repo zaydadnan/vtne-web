@@ -27,7 +27,7 @@ const StoreSection: React.FC<StoreSectionProps> = ({ showExtra }) => {
         try {
             await setDoc(emailRef, data);
             console.log("email successfully written!");
-            alert("Email successfully added to the waitlist!");
+            alert(`${email} successfully added to the waitlist!`);
         } catch (e) {
             console.error("Error writing document for username: ", e);
         }
