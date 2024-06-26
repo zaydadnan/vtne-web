@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import penguin from '../assets/penguin.gif';
 import { store } from "../Firebase/firebase-config";
-import { collection, addDoc, doc, setDoc } from "firebase/firestore";
+import { doc, setDoc } from "firebase/firestore";
 
 interface StoreSectionProps {
     showExtra: boolean;
