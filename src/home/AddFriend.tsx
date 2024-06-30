@@ -21,7 +21,7 @@ const AddFriend: React.FC = () => {
 
   const redirectToApp = () => {
     try {
-      const appUrl = `step-champ://?name=${encodeURIComponent(name)}&id=${encodeURIComponent(username)}&function=addFriend`;
+      const appUrl = `step-competition://?name=${encodeURIComponent(name)}&username=${encodeURIComponent(username)}&function=addFriend`;
       window.location.href = appUrl;
     } catch (error) {
       console.error('Error redirecting to app', error);
