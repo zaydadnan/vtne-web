@@ -18,9 +18,9 @@ const StoreSection: React.FC<StoreSectionProps> = ({ showExtra }) => {
     const handleJoinClick = async () => {
         console.log(`Email to join: ${email}`);
 
-        if(email === '' || email.includes("@") === false || email.includes(".") === false){
+        if (email === '' || email.includes("@") === false || email.includes(".") === false) {
             alert("Please enter a valid email address")
-            return; 
+            return;
         }
         const emailRef = doc(store, `emails/${email}`);
         const data = { email: `${email}` };
@@ -48,12 +48,14 @@ const StoreSection: React.FC<StoreSectionProps> = ({ showExtra }) => {
                     onChange={handleEmailChange}
                     className="px-4 py-2  text-slate-800 rounded-md focus:outline-none w-full lg:w-96"
                 />
-                <button
-                    onClick={handleJoinClick}
-                    className="px-6 py-2 bg-black text-white rounded-r-md hover:bg-slate-700"
-                >
-                    Join Waitlist
-                </button>
+                {!showExtra &&
+                    <button
+                        onClick={handleJoinClick}
+                        className="px-6 py-2 bg-black text-white rounded-r-md hover:bg-slate-700"
+                    >
+                        Join Waitlist
+                    </button>
+                }
             </div>
 
             {showExtra && <div className="text-2xl text-slate-800 font-semibold mt-8 items-center text-center">
