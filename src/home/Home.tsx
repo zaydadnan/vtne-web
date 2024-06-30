@@ -22,7 +22,7 @@ const HomePage: React.FC = () => {
                             <PhoneApp />
                         </div>
                     }
-                    <StoreSection showExtra={!fromUtm} />
+                    <StoreSection fromUtm={fromUtm} />
                     {fromUtm && <AddFriend />}
                     {!fromUtm &&
                         <div className='block md:hidden'>
