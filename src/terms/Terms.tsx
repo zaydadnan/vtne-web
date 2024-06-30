@@ -11,7 +11,7 @@ const TermsPage: React.FC = () => {
             <Helmet>
                 <title>Step Comp - make stepping fun</title>
                 <meta name="description" content="Sign up, add friends and start competing to become the step champion!" />
-                <link rel="canonical" href="https://joinwaddle.netlify.app" />
+                <link rel="canonical" href="https://stepcompetition.netlify.app" />
             </Helmet>
             <div className="mx-auto w-full max-w-7xl px-5 md:px-10 lg:px-24">
                 <div className="flex max-w-3xl flex-col py-16 md:py-24 lg:py-32">

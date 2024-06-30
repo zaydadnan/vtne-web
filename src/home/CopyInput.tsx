@@ -3,14 +3,14 @@ import { FaClipboard } from "react-icons/fa6";
 
 interface CopyInputProps {
   name: string;
-  userId: string;
+  username: string;
 }
 
-const CopyInput: React.FC<CopyInputProps> = ({ name, userId }) => {
+const CopyInput: React.FC<CopyInputProps> = ({ name, username }) => {
   const [isCopied, setIsCopied] = useState(false);
 
   const copyToClipboard = () => {
-    navigator.clipboard.writeText(userId);
+    navigator.clipboard.writeText(username);
     setIsCopied(true);
     setTimeout(() => setIsCopied(false), 2000); // Reset copied state after 2 seconds
   };
@@ -18,7 +18,7 @@ const CopyInput: React.FC<CopyInputProps> = ({ name, userId }) => {
   return (
     <div className="relative">
       <div className="text-lg text-slate-600 font-semibold mt-4 mb-1 mx-1 ">
-        {name.toLowerCase()}'s user id
+        {name}'s username:
       </div>
       <div className="flex items-center w-full rounded-lg border border-slate-300">
         <input
@@ -26,7 +26,7 @@ const CopyInput: React.FC<CopyInputProps> = ({ name, userId }) => {
           className="w-full px-4 py-1 rounded-full focus:outline-none text-slate-500 bg-white"
           placeholder="search"
           readOnly
-          value={userId}
+          value={username}
           onClick={copyToClipboard}
         />
         <button

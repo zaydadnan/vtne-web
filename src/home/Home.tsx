@@ -14,7 +14,7 @@ const HomePage: React.FC = () => {
                 <Helmet>
                     <title>Step Comp - make stepping fun</title>
                     <meta name="description" content="Sign up, add friends and start competing to become the step champion!" />
-                    <link rel="canonical" href="https://joinwaddle.netlify.app" />
+                    <link rel="canonical" href="https://stepcompetition.netlify.app" />
                 </Helmet>
                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 space-y-5">
                     {!fromUtm &&
@@ -40,7 +40,7 @@ const HomePage: React.FC = () => {
 
 function hasUTMParameters() {
     const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.has('name') && urlParams.has('id') && urlParams.has('function');
+    return urlParams.has('name') && urlParams.has('username') && urlParams.has('function');
   }
   
 

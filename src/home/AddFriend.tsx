@@ -4,24 +4,24 @@ import { useEffect, useState } from "react";
 
 const AddFriend: React.FC = () => {
   const [name, setName] = useState<string>('Your friend');
-  const [id, setId] = useState<string>('default_id');
+  const [username, setUsername] = useState<string>('default_id');
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
     const nameParam = urlParams.get('name');
-    const idParam = urlParams.get('id');
+    const usernameParam = urlParams.get('username');
     if (nameParam) {
       setName(nameParam);
     }
-    if (idParam) {
-      setId(idParam);
+    if (usernameParam) {
+      setUsername(usernameParam);
     }
   }, []);
 
 
   const redirectToApp = () => {
     try {
-      const appUrl = `step-champ://?name=${encodeURIComponent(name)}&id=${encodeURIComponent(id)}&function=addFriend`;
+      const appUrl = `step-champ://?name=${encodeURIComponent(name)}&id=${encodeURIComponent(username)}&function=addFriend`;
       window.location.href = appUrl;
     } catch (error) {
       console.error('Error redirecting to app', error);
@@ -33,7 +33,7 @@ const AddFriend: React.FC = () => {
       <h1 className="md:text-6xl text-5xl text-slate-800 font-bold text-left">{name}
         <span className="md:text-4xl text-3xl text-slate-600 font-semibold">&nbsp; wants to add you on step competition!</span>
       </h1>
-      <CopyInput name={name} userId={id} />
+      <CopyInput name={name} username={username} />
       <div className="text-lg text-slate-600 font-semibold mt-4 mb-1 mx-1 space-y-1 ">
         <div>1. join the app</div>
         <div>2. select invite friend</div>

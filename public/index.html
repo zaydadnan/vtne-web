@@ -28,7 +28,7 @@
     
         // Set a timeout to redirect to the web URL as fallback after 2 seconds
         setTimeout(function() {
-          const webUrl = `https://joinwaddle.netlify.app/?name=${encodeURIComponent(name)}&id=${encodeURIComponent(id)}&webfunction=${encodeURIComponent(func)}`;
+          const webUrl = `https://stepcompetition.netlify.app/?name=${encodeURIComponent(name)}&id=${encodeURIComponent(id)}&webfunction=${encodeURIComponent(func)}`;
           window.location.replace(webUrl); // Use replace to prevent back button issues
         }, 2000); // Adjust timeout as needed
       }
