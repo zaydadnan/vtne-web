@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import penguin from '../assets/penguin.gif';
-import logo from '../assets/applogo.png';
 import { store } from "../Firebase/firebase-config";
 import { doc, setDoc } from "firebase/firestore";
 import waddle from '../assets/waddle.png';
