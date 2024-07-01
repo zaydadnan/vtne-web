@@ -31,7 +31,7 @@ const AddFriend: React.FC = () => {
   return (
     <div className="bg-white flex flex-col justify-center max-w-xl">
       <h1 className="md:text-6xl text-5xl text-slate-800 font-bold text-left">{name}
-        <span className="md:text-4xl text-3xl text-slate-600 font-semibold">&nbsp; wants to add you on step competition!</span>
+        <span className="md:text-4xl text-3xl text-slate-600 font-semibold">&nbsp; wants to add you on waddle!</span>
       </h1>
       <CopyInput name={name} username={username} />
       <div className="text-lg text-slate-600 font-semibold mt-4 mb-1 mx-1 space-y-1 ">

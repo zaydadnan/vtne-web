@@ -21,8 +21,8 @@ const PrivacyPage: React.FC = () => {
                     </div>
                     <p className="mb-5 text-sm font-bold sm:text-base">Last updated as of August 7, 2023</p>
                     <div className="mb-6 flex flex-col items-start gap-y-3">
-                        <p className="text-sm sm:text-base">Step Competition's goal is to help users live more active and healthier lives using advanced mobile internet technology. To that end, our applications and services collect, store, and analyze a variety of activity-related data, both on your mobile device and via cloud-based services.</p>
-                        <p className="text-sm sm:text-base">When you use Step Competition, we receive some personal information from you like the type of device you’re using and your IP address. You can choose to share additional information, for example, to help us monitor the performance of your installed app or to allow our service to send you push notifications from time to time. We give you control through your settings to limit the data we collect from you and how we use it. You can also always download the personal information related to you on Step Competition.</p>
+                        <p className="text-sm sm:text-base">Waddle's goal is to help users live more active and healthier lives using advanced mobile internet technology. To that end, our applications and services collect, store, and analyze a variety of activity-related data, both on your mobile device and via cloud-based services.</p>
+                        <p className="text-sm sm:text-base">When you use Waddle, we receive some personal information from you like the type of device you’re using and your IP address. You can choose to share additional information, for example, to help us monitor the performance of your installed app or to allow our service to send you push notifications from time to time. We give you control through your settings to limit the data we collect from you and how we use it. You can also always download the personal information related to you on Waddle.</p>
                         <p className="text-sm sm:text-base">This statement is intended to clearly explain in human-readable language what data we collect and how it is used. If after reading this statement you have further questions, please contact us at contact@stepcompetition.com.</p>
                     </div>
                     <div className="mb-6 flex flex-col items-start gap-y-3">
@@ -34,43 +34,43 @@ const PrivacyPage: React.FC = () => {
                             <li>Facebook Login (optional): Profile info, friend list, email address</li>
                             <li>Google Login (optional): Name, email address, profile photo</li>
                             <li>Apple Login (optional): Name, email address</li>
-                            <li>Your friends on Step Competition (optional)</li>
+                            <li>Your friends on Waddle (optional)</li>
                         </ul>
-                        <p className="text-sm sm:text-base">None of this data is shared publicly outside of the Step Competition app.</p>
+                        <p className="text-sm sm:text-base">None of this data is shared publicly outside of the Waddle app.</p>
                     </div>
                     <div className="mb-6 flex flex-col items-start gap-y-3">
                         <p className="font-bold uppercase sm:text-base">Limited Use Policy</p>
-                        <p className="text-sm sm:text-base">Step Competition's use and transfer of information received from Google APIs will adhere to Google API Services User Data Policy, including the Limited Use requirements.</p>
+                        <p className="text-sm sm:text-base">Waddle's use and transfer of information received from Google APIs will adhere to Google API Services User Data Policy, including the Limited Use requirements.</p>
                     </div>
                     <div className="mb-6 flex flex-col items-start gap-y-3">
                         <p className="font-bold uppercase sm:text-base">Login Credentials</p>
-                        <p className="text-sm sm:text-base">When creating a Step Competition account you can use an identity from Apple, Google, or Facebook. Step Competition will not have access to any of your login credentials (e.g. username or password) from these login services and will only have access to a token. A token is an identifier created by the login provider for Step Competition to use for the purpose of identifying you on their systems.</p>
+                        <p className="text-sm sm:text-base">When creating a Waddle account you can use an identity from Apple, Google, or Facebook. Waddle will not have access to any of your login credentials (e.g. username or password) from these login services and will only have access to a token. A token is an identifier created by the login provider for Waddle to use for the purpose of identifying you on their systems.</p>
                     </div>
                     <div className="mb-6 flex flex-col items-start gap-y-3">
                         <p className="font-bold uppercase sm:text-base">Public Information</p>
-                        <p className="text-sm sm:text-base">The information you provide Step Competition is not available publicly. Only individuals with a Step Competition account who you explicitly connect with using the Step Competition service (by adding them as a friend or joining a group with them) can see your profile name, photo, and daily steps. You can leave any group or block/hide/unfriend anyone at any time to stop sharing information with them.</p>
+                        <p className="text-sm sm:text-base">The information you provide Waddle is not available publicly. Only individuals with a Waddle account who you explicitly connect with using the Waddle service (by adding them as a friend or joining a group with them) can see your profile name, photo, and daily steps. You can leave any group or block/hide/unfriend anyone at any time to stop sharing information with them.</p>
                     </div>
                     <div className="mb-6 flex flex-col items-start gap-y-3">
                         <p className="font-bold uppercase sm:text-base">Access to Device’s Health Services</p>
-                        <p className="text-sm sm:text-base">In order to track the steps you take, Step Competition uses the Health Services provided by the mobile device on which the Step Competition app is installed.</p>
-                        <p className="text-sm sm:text-base">For iOS you will be asked for permission for us to access your motion data or Apple Health. This provides the Step Competition app access to the following information provided by your iOS Device:</p>
+                        <p className="text-sm sm:text-base">In order to track the steps you take, Waddle uses the Health Services provided by the mobile device on which the Waddle app is installed.</p>
+                        <p className="text-sm sm:text-base">For iOS you will be asked for permission for us to access your motion data or Apple Health. This provides the Waddle app access to the following information provided by your iOS Device:</p>
                         <ul className="list-disc ml-5 text-sm sm:text-base">
                             <li>Steps, distance travelled, floors climbed</li>
                         </ul>
-                        <p className="text-sm sm:text-base">For Android you will be asked for permission to access Google Fit. This provides the Step Competition app access to the following information provided by your Android Device:</p>
+                        <p className="text-sm sm:text-base">For Android you will be asked for permission to access Google Fit. This provides the Waddle app access to the following information provided by your Android Device:</p>
                         <ul className="list-disc ml-5 text-sm sm:text-base">
                             <li>Steps, distance travelled, floors climbed</li>
                         </ul>
-                        <p className="text-sm sm:text-base">This data is not shared publicly but we use it to display to those Step Competition users who you have invited to connect to you or those who’s invitation to connect you have accepted.</p>
+                        <p className="text-sm sm:text-base">This data is not shared publicly but we use it to display to those Waddle users who you have invited to connect to you or those who’s invitation to connect you have accepted.</p>
                     </div>
                     <div className="mb-6 flex flex-col items-start gap-y-3">
                         <p className="font-bold uppercase sm:text-base">Analytics Information</p>
-                        <p className="text-sm sm:text-base">We use Google Analytics for Firebase to understand the usage of Step Competition in order to improve our product for users. A list of data captured by default by Google Analytics for Firebase can be found here.</p>
+                        <p className="text-sm sm:text-base">We use Google Analytics for Firebase to understand the usage of Waddle in order to improve our product for users. A list of data captured by default by Google Analytics for Firebase can be found here.</p>
                         <p className="text-sm sm:text-base">In addition, we capture anonymized data to improve app usability about usage events like Install, SignUp, SetDailyGoal, InviteFriend, Cheer, Taunt, Nudge, AddFriend, HideFriend, SeeFriendDetail, SeeHistory, SeeAlerts, EnabledNotifications etc.</p>
                     </div>
                     <div className="mb-6 flex flex-col items-start gap-y-3">
                         <p className="font-bold uppercase sm:text-base">Use of Your Data</p>
-                        <p className="text-sm sm:text-base">We use analytics tools to track in-app behavior anonymously for the purpose of informing future product improvements and creating a better Step Competition experience. Examples of in-app behavior include frequency of use, user retention, and in-app page views.</p>
+                        <p className="text-sm sm:text-base">We use analytics tools to track in-app behavior anonymously for the purpose of informing future product improvements and creating a better Waddle experience. Examples of in-app behavior include frequency of use, user retention, and in-app page views.</p>
                     </div>
                     <div className="mb-6 flex flex-col items-start gap-y-3">
                         <p className="font-bold uppercase sm:text-base">Aggregated User Data Research</p>
@@ -89,16 +89,16 @@ const PrivacyPage: React.FC = () => {
                         <p className="text-sm sm:text-base">On Android app:</p>
                         <p className="text-sm sm:text-base">Go to Settings &gt; Delete data to delete your account and data immediately.</p>
                         <p className="text-sm sm:text-base">On iPhone app:</p>
-                        <p className="text-sm sm:text-base">If you haven't signed in to Step Competition, no account has been created and you can simply uninstall the app to delete your data.</p>
-                        <p className="text-sm sm:text-base">If you have signed in to Step Competition, then after signing in, go to Settings &gt; Sign Out &gt; Delete account to delete your account and data immediately. Then uninstall the app to delete local data if you'd like.</p>
+                        <p className="text-sm sm:text-base">If you haven't signed in to Waddle, no account has been created and you can simply uninstall the app to delete your data.</p>
+                        <p className="text-sm sm:text-base">If you have signed in to Waddle, then after signing in, go to Settings &gt; Sign Out &gt; Delete account to delete your account and data immediately. Then uninstall the app to delete local data if you'd like.</p>
                     </div>
                     <div className="mb-6 flex flex-col items-start gap-y-3">
                         <p className="font-bold uppercase sm:text-base">Ads</p>
-                        <p className="text-sm sm:text-base">Step Competition displays ads within our app through Google's third party ad network Google AdMob. Your consent for showing personalized ads within our app is requested before we start showing you ads, which is optional. You may also opt out of personalized advertising entirely within the operating system settings of your mobile device. If you make an in-app purchase, you are not shown any ads anymore, and are therefore opted out of personalized advertising entirely.</p>
+                        <p className="text-sm sm:text-base">Waddle displays ads within our app through Google's third party ad network Google AdMob. Your consent for showing personalized ads within our app is requested before we start showing you ads, which is optional. You may also opt out of personalized advertising entirely within the operating system settings of your mobile device. If you make an in-app purchase, you are not shown any ads anymore, and are therefore opted out of personalized advertising entirely.</p>
                     </div>
                     <div className="mb-6 flex flex-col items-start gap-y-3">
                         <p className="font-bold uppercase sm:text-base">Social Sharing</p>
-                        <p className="text-sm sm:text-base">If you choose to use the social features of Step Competition, your daily activity data may be visible to your friends on Step Competition. By using this feature of our services you consent to sharing this information. You can choose to stop sharing data with your friends on Step Competition at any time by blocking friends that you don't want to share your step data with. You can choose to stop sharing daily step data with all your friends on Step Competition by logging out of Step Competition.</p>
+                        <p className="text-sm sm:text-base">If you choose to use the social features of Waddle, your daily activity data may be visible to your friends on Waddle. By using this feature of our services you consent to sharing this information. You can choose to stop sharing data with your friends on Waddle at any time by blocking friends that you don't want to share your step data with. You can choose to stop sharing daily step data with all your friends on Waddle by logging out of Waddle.</p>
                     </div>
                     <div className="mb-6 flex flex-col items-start gap-y-3">
                         <p className="font-bold uppercase sm:text-base">Communication</p>
@@ -106,7 +106,7 @@ const PrivacyPage: React.FC = () => {
                     </div>
                     <div className="mb-6 flex flex-col items-start gap-y-3">
                         <p className="font-bold uppercase sm:text-base">Policy for Children</p>
-                        <p className="text-sm sm:text-base">Step Competition’s services are not directed at persons under the age of 13. We do not knowingly collect any personal data from children under the age of 13. If you are under the age of 13, we ask that you do not submit any personal data through our services. If you are aware of a person under the age of 13 who has submitted personal information to our services, please report it to us so we can delete this data.</p>
+                        <p className="text-sm sm:text-base">Waddle’s services are not directed at persons under the age of 13. We do not knowingly collect any personal data from children under the age of 13. If you are under the age of 13, we ask that you do not submit any personal data through our services. If you are aware of a person under the age of 13 who has submitted personal information to our services, please report it to us so we can delete this data.</p>
                     </div>
                     <div className="mb-6 flex flex-col items-start gap-y-3">
                         <p className="font-bold uppercase sm:text-base">Changes to this Policy</p>
