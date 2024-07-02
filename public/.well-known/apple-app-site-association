@@ -3,10 +3,8 @@
     "apps": [],
     "details": [
       {
-        "appID": "com.zaydadnan.waddle",
+        "appID": "29K5K725CJ.com.zaydadnan.waddle",
         "paths": [
-          "/profile/*",
-           "...",
           "*"
         ]
       }
