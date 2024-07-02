@@ -3,7 +3,7 @@
     "apps": [],
     "details": [
       {
-        "appID": "com.zaydadnan.stepchamp",
+        "appID": "com.zaydadnan.waddle",
         "paths": [
           "/profile/*",
            "...",
