@@ -9,7 +9,7 @@ const PrivacyPage: React.FC = () => {
     return (
         <section>
             <Helmet>
-                <title>Step Comp - make stepping fun</title>
+                <title>Waddle - make stepping fun</title>
                 <meta name="description" content="Sign up, add friends and start competing to become the step champion!" />
                 <link rel="canonical" href="https://joinwaddle.netlify.app" />
             </Helmet>

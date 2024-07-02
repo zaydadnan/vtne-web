@@ -12,9 +12,9 @@ const HomePage: React.FC = () => {
         <div>
             <div className="max-w-screen-6xl mx-auto px-4 flex flex-col items-center justify-center min-h-screen">
                 <Helmet>
-                    <title>Step Comp - make stepping fun</title>
+                    <title>Waddle - make stepping fun</title>
                     <meta name="description" content="Sign up, add friends and start competing to become the step champion!" />
-                    <link rel="canonical" href="https://stepcompetition.netlify.app" />
+                    <link rel="canonical" href="https://joinwaddle.netlify.app" />
                 </Helmet>
                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 space-y-5">
                     {!fromUtm &&
