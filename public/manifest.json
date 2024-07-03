@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Waddle",
+  "name": "Waddle: Step Competition",
   "icons": [
     {
       "src": "waddleicon.png",
