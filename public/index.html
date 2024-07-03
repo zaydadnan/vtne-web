@@ -50,8 +50,30 @@
     };    
     </script> -->
 
-  <title>Waddle - the fun stepping app</title>
-  <meta name="description" content="Web site created using create-react-app" />
+    <script>
+      function hasUTMParameters() {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.has('name') && urlParams.has('id') && urlParams.has('function');
+      }
+  
+      function updateMetaTags() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+  
+        if (hasUTMParameters()) {
+          document.title = `Add ${name} invited you to Waddle!`;
+          document.querySelector('meta[name="description"]').setAttribute("content", `Join ${name} and start competing on steps!`);
+        } else {
+          document.title = "Waddle - the fun stepping app";
+          document.querySelector('meta[name="description"]').setAttribute("content", "Join, add friends, and compete on steps!");
+        }
+      }
+  
+      document.addEventListener("DOMContentLoaded", updateMetaTags);
+    </script>
+  
+  <!-- <title>Waddle - the fun stepping app</title>
+  <meta name="description" content="Web site created using create-react-app" /> -->
 </head>
 
 <body>
