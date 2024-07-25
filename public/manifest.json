@@ -1,19 +1,19 @@
 {
-  "short_name": "Waddle",
-  "name": "Waddle: Step Competition",
+  "short_name": "mcat-simplified",
+  "name": "MCAT Simplified",
   "icons": [
     {
-      "src": "waddleicon.png",
+      "src": "quizlogo.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "waddle192.png",
+      "src": "quizlogo192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "waddle512.png",
+      "src": "quizlogo512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
