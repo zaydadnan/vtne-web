@@ -9,9 +9,9 @@ const PrivacyPage: React.FC = () => {
     return (
         <section>
             <Helmet>
-                <title>MCAT Simplified - Privacy Policy</title>
-                <meta name="description" content="Sign up, access study resources, and prepare effectively for the MCAT!" />
-                <link rel="canonical" href="https://mcat-simplified.netlify.app" />
+                <title>VTNE Simplified - Privacy Policy</title>
+                <meta name="description" content="Sign up, access study resources, and prepare effectively for the VTNE!" />
+                <link rel="canonical" href="https://vtne-simplified.netlify.app" />
             </Helmet>
             <div className="mx-auto w-full max-w-7xl px-5 md:px-10 lg:px-24">
                 <div className="flex max-w-3xl flex-col py-16 md:py-24 lg:py-32">
@@ -21,16 +21,16 @@ const PrivacyPage: React.FC = () => {
                     </div>
                     <p className="mb-5 text-sm font-bold sm:text-base">Last updated as of July 25, 2024</p>
                     <div className="mb-6 flex flex-col items-start gap-y-3">
-                        <p className="text-sm sm:text-base">MCAT Simplified is dedicated to helping users prepare for the MCAT by providing quizzes and tracking their progress. This Privacy Policy outlines how we handle your data to protect your privacy.</p>
-                        <p className="text-sm sm:text-base">This policy is intended to clearly explain in human-readable language what data we collect and how it is used. If after reading this policy you have further questions, please contact us at support@mcat-simplified.com.</p>
+                        <p className="text-sm sm:text-base">VTNE Simplified is dedicated to helping users prepare for the VTNE by providing quizzes and tracking their progress. This Privacy Policy outlines how we handle your data to protect your privacy.</p>
+                        <p className="text-sm sm:text-base">This policy is intended to clearly explain in human-readable language what data we collect and how it is used. If after reading this policy you have further questions, please contact us at <a href="mailto:quizifycompany@gmail.com" className="font-bold">quizifycompany@gmail.com</a></p>
                     </div>
                     <div className="mb-6 flex flex-col items-start gap-y-3">
                         <p className="font-bold uppercase sm:text-base">Information Collected</p>
-                        <p className="text-sm sm:text-base">MCAT Simplified collects and stores the following types of information to provide and improve our services:</p>
+                        <p className="text-sm sm:text-base">VTNE Simplified collects and stores the following types of information to provide and improve our services:</p>
                         <ul className="list-disc ml-5 text-sm sm:text-base">
                             <li>Testing Data: Your quiz scores, progress, and other related information are stored locally on your device.</li>
                         </ul>
-                        <p className="text-sm sm:text-base">No other personal information is collected or stored by MCAT Simplified.</p>
+                        <p className="text-sm sm:text-base">No other personal information is collected or stored by VTNE Simplified.</p>
                     </div>
                     <div className="mb-6 flex flex-col items-start gap-y-3">
                         <p className="font-bold uppercase sm:text-base">Use of Your Data</p>
@@ -46,7 +46,7 @@ const PrivacyPage: React.FC = () => {
                     </div>
                     <div className="mb-6 flex flex-col items-start gap-y-3">
                         <p className="font-bold uppercase sm:text-base">Deleting Your Data</p>
-                        <p className="text-sm sm:text-base">You can delete your testing data by uninstalling the MCAT Simplified app from your device. This will remove all stored data associated with your use of the app.</p>
+                        <p className="text-sm sm:text-base">You can delete your testing data by uninstalling the VTNE Simplified app from your device. This will remove all stored data associated with your use of the app.</p>
                     </div>
                     <div className="mb-6 flex flex-col items-start gap-y-3">
                         <p className="font-bold uppercase sm:text-base">Changes to this Policy</p>
