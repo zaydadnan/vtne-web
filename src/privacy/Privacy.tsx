@@ -11,7 +11,7 @@ const PrivacyPage: React.FC = () => {
             <Helmet>
                 <title>VTNE Simplified - Privacy Policy</title>
                 <meta name="description" content="Sign up, access study resources, and prepare effectively for the VTNE!" />
-                <link rel="canonical" href="https://vtne-simplified.netlify.app" />
+                <link rel="canonical" href="https://vtnesimplified.netlify.app" />
             </Helmet>
             <div className="mx-auto w-full max-w-7xl px-5 md:px-10 lg:px-24">
                 <div className="flex max-w-3xl flex-col py-16 md:py-24 lg:py-32">

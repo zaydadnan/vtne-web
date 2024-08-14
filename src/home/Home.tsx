@@ -10,7 +10,7 @@ const HomePage: React.FC = () => {
                 <Helmet>
                     <title>VTNE Simplified - Simplify Your Study</title>
                     <meta name="description" content="Sign up, access study resources, and prepare effectively for the VTNE!" />
-                    <link rel="canonical" href="https://vtne-simplified.netlify.app" />
+                    <link rel="canonical" href="https://vtnesimplified.netlify.app" />
                 </Helmet>
                 <div className="bg-white flex flex-col items-center justify-center min-h-screen ">
                     <div className="flex flex-col sm:flex-row gap-0 sm:gap-4 items-center justify-center">
